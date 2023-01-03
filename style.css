@@ -48,18 +48,6 @@ body {
 .wrap-3 table .firstRow{position: sticky; top: 0px;}
 
 
-/* Responsive Design */
-
-/* ipad landscape */
-@media screen and (max-width:1220px){
-    .container{width:960px};
-    .row .col-t-6{flex-basis: 50%;}
-    .wrap-2 .status h2{font-size: 22px;}
-    .wrap-3 table th {font-size: 16px;}
-    .wrap-2{padding: 15px 0px;}
-}
-
-/* ipad portrait */
 @media screen and (max-width:980px){
     .container{width: 760px};
     .wrap-1{padding: 8px 0px;background-size: 60px;}
@@ -72,21 +60,6 @@ body {
     .wrap-3 table th {font-size: 13px;}
 }
 
-/* mobile landscape */
-@media screen and (max-width:767px){
-    .container{width: 100%;}
-    .wrap-1 header h1{font-size: 30px;}
-    .wrap-1{padding: 8px 0px;background-size: 120px;}
-    .wrap-2 .status h2 {font-size: 12px;}
-    .wrap-2 .inp {width: 100%;}
-    .wrap-2 .inp #cityName::placeholder{font-size: 12px;}
-    .wrap-2 .inp #cityName{font-size: 12px;padding: 12px 0px;}
-    .wrap-2 .searchbtn button,.wrap-2 .searchbtn img{width: 45px; height: 45px; font-size: 12px;}
-    .wrap-3 tr, th, td{font-size: 10px;}
-    .wrap-3 table th {font-size: 11px;}
-}
-
-/* mobile portrait */
 @media screen and (max-width:480px){
     .container{width: 100%;}
     .wrap-2 .align-center{margin: 0px 50px} 
