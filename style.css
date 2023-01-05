@@ -23,22 +23,24 @@ button {cursor: pointer;}
 
 body {
     background: #f86161;
+    font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* wrap-1 */
 .wrap-1{background-color: #cc0001;}
 .wrap-1 header{text-align: center;}
-.wrap-1 header h1{font-size: 70px; color: rgb(255, 255, 255);}
-
+.wrap-1 header h1{font-size: 55px; color: rgb(255, 255, 255);}
 /* wrap-2 */
-.wrap-2{padding: 40px 0px;}
+
+.wrap-2{padding: 20px 0px;}
 .wrap-2 .msg{color: rgb(247, 8, 8);}
+/* .wrap-2 .inp label{display: none;} */
 .wrap-2 .inp #cityName{padding: 12px; text-align: center; font-size: 25px; border-color: #0c0c0c; border-radius: 10px;color: #0c0101; width: 100%;}
-.wrap-2 .searchbtn {margin-left: 2px;}
-.wrap-2 .searchbtn button{border: none; width: 80px;height: 59px; border-radius: 10px; font-size: 20px; color: #0c0101; background-color: rgb(243, 240, 85);}
-.wrap-2 .searchbtn button:hover{background: #d1f3de;}
+.wrap-2 .search {margin-left: 2px;}
+.wrap-2 .search button{border: none; width: 80px;height: 59px; border-radius: 10px; font-size: 20px; color: #0c0101; background-color: rgb(243, 240, 85);}
+.wrap-2 .search button:hover{background: #d1f3de;}
 .wrap-2 .status { background: #fff; font-size: 22px; border-radius: 10px; padding: 10px;}
-.wrap-2 .searchbtn img{width: 60px; height: 60px; border-radius: 50%;display: none;}
+.wrap-2 .search img{width: 60px; height: 60px; border-radius: 50%;display: none;}
 
 /* wrap-3 */
 .wrap-3 table {width: 100%;}
@@ -47,7 +49,13 @@ body {
 .wrap-3 tr, th ,td{padding: 5px 5px; border-radius: 6px;}
 .wrap-3 table .firstRow{position: sticky; top: 0px;}
 
-
+@media screen and (max-width:1220px){
+    .container{width:960px};
+    .row .col-t-6{flex-basis: 50%;}
+    .wrap-2 .status h2{font-size: 22px;}
+    .wrap-3 table th {font-size: 16px;}
+    .wrap-2{padding: 15px 0px;}
+}
 @media screen and (max-width:980px){
     .container{width: 760px};
     .wrap-1{padding: 8px 0px;background-size: 60px;}
@@ -59,6 +67,26 @@ body {
     .wrap-3 tr, th,td{font-size: 12px;}
     .wrap-3 table th {font-size: 13px;}
 }
+
+/* mobile landscape */
+@media screen and (max-width:767px){
+    .container{width: 100%;}
+    .wrap-1 header h1{font-size: 30px;}
+    .wrap-1{padding: 8px 0px;background-size: 120px;}
+    @keyframes mymove {
+        from{font-size: 0px;padding: 2px 0px;}
+        to{font-size: 30px;}   
+    }
+    .wrap-2 .status h2 {font-size: 12px;}
+    .wrap-2 .inp {width: 100%;}
+    .wrap-2 .inp #cityName::placeholder{font-size: 12px;}
+    .wrap-2 .inp #cityName{font-size: 12px;padding: 12px 0px;}
+    .wrap-2 .search button,.wrap-2 .search img{width: 45px; height: 45px; font-size: 12px;}
+    .wrap-3 tr, th, td{font-size: 10px;}
+    .wrap-3 table th {font-size: 11px;}
+}
+
+/* mobile portrait */
 
 @media screen and (max-width:480px){
     .container{width: 100%;}

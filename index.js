@@ -1,5 +1,5 @@
 let table = document.querySelector("table").innerHTML;
-document.querySelector(".searchbtn").addEventListener("click", function (e) {
+document.querySelector(".search").addEventListener("click", function (e) {
   e.preventDefault();
   let cityV = document.querySelector("#cityName").value;
   if (cityV == "") {
