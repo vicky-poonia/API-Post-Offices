@@ -22,21 +22,21 @@ button {cursor: pointer;}
 .row .col-12 {flex-basis: 100%;}
 
 body {
-    background: #f86161;
+    background: #f8e661;
 }
 
 /* wrap-1 */
-.wrap-1{background-color: #cc0001;}
+.wrap-1{background-color: #f92424;}
 .wrap-1 header{text-align: center;}
 .wrap-1 header h1{font-size: 70px; color: rgb(255, 255, 255);}
 
 /* wrap-2 */
 .wrap-2{padding: 40px 0px;}
-.wrap-2 .msg{color: rgb(247, 8, 8);}
+.wrap-2 .msg{color: rgb(28, 247, 8);}
 .wrap-2 .inp #cityName{padding: 12px; text-align: center; font-size: 25px; border-color: #0c0c0c; border-radius: 10px;color: #0c0101; width: 100%;}
 .wrap-2 .searchbtn {margin-left: 2px;}
-.wrap-2 .searchbtn button{border: none; width: 80px;height: 59px; border-radius: 10px; font-size: 20px; color: #0c0101; background-color: rgb(243, 240, 85);}
-.wrap-2 .searchbtn button:hover{background: #d1f3de;}
+.wrap-2 .searchbtn button{border: none; width: 80px;height: 59px; border-radius: 10px; font-size: 20px; color: #0c0101; background-color: rgb(28, 247, 8);}
+.wrap-2 .searchbtn button:hover{background: #8df985;}
 .wrap-2 .status { background: #fff; font-size: 22px; border-radius: 10px; padding: 10px;}
 .wrap-2 .searchbtn img{width: 60px; height: 60px; border-radius: 50%;display: none;}
 

@@ -23,7 +23,7 @@ document.querySelector(".searchbtn").addEventListener("click", function (e) {
                                                               <td>${sub.District}</td>
                                                               <td>${sub.Region}</td>
                                                               <td>${sub.State}</td>
-                                                              <td>${sub.Country}</td>
+                                                              
                                                           </tr>`;
           });
         }
